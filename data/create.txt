@@ -12,3 +12,7 @@ create table product_tbl (
     harga_satuan int default 0,
     foreign key (seller_id) references seller_tbl(id)
 );
+
+INSERT INTO `seller_tbl` VALUES (1,'Ahmad Baha','Bandung'),(2,'Amiruddin','Jakarta'),(3,'Saefuddin','Yogyakarta');
+
+INSERT INTO `product_tbl` VALUES (1,1,'Spidol',20,9000),(2,1,'Penghapus',50,3000),(3,3,'bolpen',10,3000),(4,3,'bolpen',10,3000);

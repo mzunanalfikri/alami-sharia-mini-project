@@ -1,0 +1,14 @@
+create table seller_tbl (
+    id int primary key auto_increment,
+    nama varchar(255) not null,
+    kota varchar(255)
+);
+
+create table product_tbl (
+    id int primary key auto_increment,
+    seller_id int,
+    nama varchar(255) not null,
+    satuan int default 0,
+    harga_satuan int default 0,
+    foreign key (seller_id) references seller_tbl(id)
+);

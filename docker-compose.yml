@@ -1,24 +1,22 @@
 version: "3.8"
 services:
-  db:
+  mysql_db:
     image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootroot
+      - MYSQL_DATABASE=alami_sharia
+      - MYSQL_USER=root
     volumes:
       - ./alami_sharia:/var/lib/mysql
       - ./data/alami_sharia.sql:/docker-entrypoint-initdb.d/init.sql
-    ports:
-      - 3306:3306
+  alami_sharia_spring:
+    image: alami_sharia_spring
     environment:
-      - MYSQL_DATABASE=alami_sharia
-      - MYSQL_ROOT_PASSWORD=rootroot
-  alami_sharia:
-    image: alami_sharia:latest
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql_db:3306/alami_sharia?serverTimezone=UTC
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
-    container_name: alami_sharia
-    expose:
-      - 8080
     ports:
       - 8080:8080
     depends_on:
-      - db
+      - mysql_db

@@ -7,7 +7,7 @@ Spring boot project with 5 simple CRUD endpoint.This apllication tested using Ju
 2. "/products" : [GET] list all products
 3. "/products-by-seller-id/{id}" : [GET] list off product from a spesific seller
 4. "/search?key=<key>" : [GET] search product by name (contains certain key)
-4. "/add-product" : [POST] add product for spesific seller \
+4. "/add-product" : [POST] add product for spesific seller 
 
 
 ## Architecture

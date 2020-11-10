@@ -12,7 +12,7 @@ Spring boot project with 5 simple CRUD endpoint.
 
 ## Architecture
 This project use three layered architecture :
-![three layered architecture](https://github.com/mzunanalfikri/alami-sharia-mini-project/architecture.png)
+![three layered architecture](https://github.com/mzunanalfikri/alami-sharia-mini-project/blob/master/architecture.png)
 1. Web Layer
 Web layer implemented on package main.java.com.alami.miniproject.controller. Web layer contains rest endpoint for this application.
 2. Service Layer

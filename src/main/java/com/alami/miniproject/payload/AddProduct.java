@@ -6,6 +6,15 @@ public class AddProduct {
     private Long amount;
     private Long price;
 
+    public AddProduct(){}
+
+    public AddProduct(Long seller_id, String name, Long amount, Long price) {
+        this.seller_id = seller_id;
+        this.name = name;
+        this.amount = amount;
+        this.price = price;
+    }
+
     public Long getSeller_id() {
         return seller_id;
     }

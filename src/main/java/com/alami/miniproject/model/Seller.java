@@ -12,6 +12,14 @@ public class Seller {
     @Column(name = "kota")
     private String city;
 
+    public Seller(){}
+
+    public Seller(Long id, String name, String city) {
+        this.id = id;
+        this.name = name;
+        this.city = city;
+    }
+
     public Long getId() {
         return id;
     }

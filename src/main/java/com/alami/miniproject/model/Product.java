@@ -17,6 +17,18 @@ public class Product {
     @Column(name = "harga_satuan")
     private Long price;
 
+    public Product(){
+
+    }
+
+    public Product(Long id, Long sellerId, String name, Long amount, Long price) {
+        this.id = id;
+        this.sellerId = sellerId;
+        this.name = name;
+        this.amount = amount;
+        this.price = price;
+    }
+
     public Long getId() {
         return id;
     }

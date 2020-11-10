@@ -31,14 +31,14 @@ public class ProductController {
         return ResponseEntity.ok(productService.getProductBySellerId(id));
     }
 
+    @GetMapping(value = "/search", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> searchProductByKeyword(@RequestParam String key){
+        return ResponseEntity.ok(productService.searchProductByKeyword(key));
+    }
+
     @PostMapping(value = "/add-product", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> addProduct(@Validated @RequestBody AddProduct product){
         String msg = productService.addProduct(product);
         return ResponseEntity.ok(msg);
-    }
-
-    @GetMapping(value = "/search", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> searchProductByKeyword(@RequestParam String key){
-        return ResponseEntity.ok(productService.searchProductByKeyword(key));
     }
 }

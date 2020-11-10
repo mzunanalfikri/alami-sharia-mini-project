@@ -18,12 +18,15 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProductServiceTest {
+    // annotate for mock injection
     @InjectMocks
     private ProductService productService;
 
+    //mock product repository
     @Mock
     private ProductRepository productRepository;
 
+    //mock seller repository
     @Mock
     private SellerRepository sellerRepository;
 

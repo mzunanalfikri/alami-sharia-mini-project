@@ -24,9 +24,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @WebMvcTest(ProductController.class)
 class ProductControllerTest {
+    // mock for spring mvc
     @Autowired
     private MockMvc mockMvc;
 
+    // mock product service
     @MockBean
     private ProductService productService;
 

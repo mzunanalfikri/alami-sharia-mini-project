@@ -30,6 +30,7 @@ public class ProductService {
 
     public String addProduct(AddProduct product){
         Optional<Seller> sellerOptional = sellerRepository.findById(product.getSeller_id());
+        // check seller in database or not
         if (sellerOptional.isPresent()){
             Product new_product = new Product();
             new_product.setSellerId(product.getSeller_id());

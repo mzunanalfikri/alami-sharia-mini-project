@@ -1,6 +1,5 @@
 # ALAMI Sharia Mini Project
-
-Spring Boot Mini Project untuk seleksi internship Software Engineer ALAMI Sharia.
+Spring Boot Mini Project for internship selection for Software Engineer ALAMI Sharia.
 
 ## Description
 Spring boot project with 5 simple CRUD endpoint.

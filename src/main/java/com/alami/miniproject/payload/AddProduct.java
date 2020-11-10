@@ -46,4 +46,14 @@ public class AddProduct {
     public void setPrice(Long price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "AddProduct{" +
+                "seller_id=" + seller_id +
+                ", name='" + name + '\'' +
+                ", amount=" + amount +
+                ", price=" + price +
+                '}';
+    }
 }

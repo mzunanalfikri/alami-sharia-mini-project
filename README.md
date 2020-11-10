@@ -7,7 +7,8 @@ Spring boot project with 5 simple CRUD endpoint.
 2. "/products" : [GET] list all products
 3. "/products-by-seller-id/{id}" : [GET] list off product from a spesific seller
 4. "/search?key=<key>" : [GET] search product by name (contains certain key)
-4. "/add-product" : [POST] add product for spesific seller
+4. "/add-product" : [POST] add product for spesific seller \
+This apllication testted using Junit and mMckito for mocking.
 
 ## Architecture
 This project use three layered architecture :

@@ -39,6 +39,8 @@ public class ProductController {
     @PostMapping(value = "/add-product", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> addProduct(@Validated @RequestBody AddProduct product){
         String msg = productService.addProduct(product);
+        System.out.println("HASIL PRODUCT:");
+        System.out.println(product);
         return ResponseEntity.ok(msg);
     }
 }

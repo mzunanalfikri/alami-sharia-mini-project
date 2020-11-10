@@ -12,8 +12,8 @@ This apllication testted using Junit and mMckito for mocking.
 
 ## Architecture
 This project use three layered architecture :
-![three layered architecture](https://github.com/mzunanalfikri/alami-sharia-mini-project/architecture.png)
-1. Web Layer \
+![three layered architecture](https://github.com/mzunanalfikri/alami-sharia-mini-project/blob/master/architecture.png)
+1. Web Layer
 Web layer implemented on package main.java.com.alami.miniproject.controller. Web layer contains rest endpoint for this application.
 2. Service Layer \
 Service Layer implemented on package main.java.com.alami.miniproject.service. Service Layer contains bussiness logic for this application.

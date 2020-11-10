@@ -1,14 +1,14 @@
 # ALAMI Sharia Mini Project
-Spring Boot Mini Project for internship selection for Software Engineer ALAMI Sharia.
+Spring Boot Mini Project for internship selection for Software Engineer at ALAMI Sharia.
 
 ## Description
-Spring boot project with 5 simple CRUD endpoint.
+Spring boot project with 5 simple CRUD endpoint.This apllication tested using Junit and Mockito for mocking.
 1. "/" : [GET] "ALAMI Sharia"
 2. "/products" : [GET] list all products
 3. "/products-by-seller-id/{id}" : [GET] list off product from a spesific seller
 4. "/search?key=<key>" : [GET] search product by name (contains certain key)
 4. "/add-product" : [POST] add product for spesific seller \
-This apllication testted using Junit and mMckito for mocking.
+
 
 ## Architecture
 This project use three layered architecture :
